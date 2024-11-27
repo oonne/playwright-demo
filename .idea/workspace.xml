@@ -49,13 +49,14 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Python 测试.Python 测试 (test.py 内).executor": "Run",
     "Python 测试.test.TestExample.test_1 的 Python 测试.executor": "Run",
+    "Python 测试.test.TestExample.test_2 的 Python 测试.executor": "Run",
     "Python 测试.test.TestExample.test_example 的 Python 测试.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/jay/Code/playwright-demo"
   }
 }]]></component>
-  <component name="RunManager" selected="Python 测试.test.TestExample.test_1 的 Python 测试">
+  <component name="RunManager" selected="Python 测试.test.TestExample.test_2 的 Python 测试">
     <configuration name="Python 测试 (test.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
@@ -86,6 +87,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="test.TestExample.test_2 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="playwright-demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestExample.test_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="test.TestExample.test_example 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
@@ -103,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python 测试.test.TestExample.test_2 的 Python 测试" />
         <item itemvalue="Python 测试.test.TestExample.test_1 的 Python 测试" />
         <item itemvalue="Python 测试.test.TestExample.test_example 的 Python 测试" />
         <item itemvalue="Python 测试.Python 测试 (test.py 内)" />
@@ -189,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732696593743</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test: 测试脚本">
+      <option name="closed" value="true" />
+      <created>1732696845210</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732696845210</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
