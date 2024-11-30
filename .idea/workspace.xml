@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 测试脚本">
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 异步执行测试用例">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
     </list>
@@ -48,6 +48,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Python 测试.Python 测试 (test.py 内).executor": "Run",
+    "Python 测试.test.AsyncTestExample 的 Python 测试.executor": "Run",
     "Python 测试.test.AsyncTestExample.test_2 的 Python 测试.executor": "Run",
     "Python 测试.test.TestExample.test_1 的 Python 测试.executor": "Run",
     "Python 测试.test.TestExample.test_2 的 Python 测试.executor": "Run",
@@ -58,7 +59,7 @@
   }
 }]]></component>
   <component name="RunManager" selected="Python 测试.test.AsyncTestExample.test_2 的 Python 测试">
-    <configuration name="Python 测试 (test.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test.AsyncTestExample 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,8 +70,8 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test.AsyncTestExample&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="test.AsyncTestExample.test_2 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -136,10 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python 测试.test.AsyncTestExample.test_2 的 Python 测试" />
-        <item itemvalue="Python 测试.test.TestExample.test_2 的 Python 测试" />
+        <item itemvalue="Python 测试.test.AsyncTestExample 的 Python 测试" />
         <item itemvalue="Python 测试.test.TestExample.test_1 的 Python 测试" />
+        <item itemvalue="Python 测试.test.TestExample.test_2 的 Python 测试" />
         <item itemvalue="Python 测试.test.TestExample.test_example 的 Python 测试" />
-        <item itemvalue="Python 测试.Python 测试 (test.py 内)" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732697904888</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test: 异步执行测试用例">
+      <option name="closed" value="true" />
+      <created>1732933308560</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732933308560</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,6 +256,7 @@
     <MESSAGE value="chore: 初始化项目" />
     <MESSAGE value="test: 新增测试脚本" />
     <MESSAGE value="test: 测试脚本" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 测试脚本" />
+    <MESSAGE value="test: 异步执行测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 异步执行测试用例" />
   </component>
 </project>

@@ -16,7 +16,7 @@ class TestExample(unittest.TestCase):
     def test_1(self):
         with sync_playwright() as playwright:
             # 创建浏览器上下文，每个上下文是独立的登录环境
-            browser = playwright.chromium.launch(headless=False)
+            browser = playwright.chromium.launch(headless=False, devtools=True)
             content = browser.new_context()
             # 每个 content 就是一个会话窗口，可以创建自己的页面，也就是浏览器上的 tab 栏
             page = content.new_page()
@@ -48,13 +48,19 @@ class AsyncTestExample(unittest.IsolatedAsyncioTestCase):
     async def test_2(self):
         playwright = await async_playwright().start()
         # 创建浏览器上下文，每个上下文是独立的登录环境
-        browser = await playwright.chromium.launch(headless=False)
+        browser = await playwright.chromium.launch(headless=False, devtools=True)
         content = await browser.new_context()
         # 每个 content 就是一个会话窗口，可以创建自己的页面，也就是浏览器上的 tab 栏
         page = await content.new_page()
 
         # 页面打开指定网址
-        await page.goto('https://tiktok.com')
+        await page.goto('https://www.tiktok.com')
+
+        user_agent = await page.evaluate("() => navigator.userAgent")
+        language = await page.evaluate("() => navigator.language || navigator.userLanguage")
+        platform = await page.evaluate("() => navigator.platform")
+        print(user_agent, language, platform)
+
         # 延迟关闭
         await page.wait_for_timeout(10000)
 
