@@ -48,6 +48,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Python 测试.Python 测试 (test.py 内).executor": "Run",
+    "Python 测试.test.AsyncTestExample.test_2 的 Python 测试.executor": "Run",
     "Python 测试.test.TestExample.test_1 的 Python 测试.executor": "Run",
     "Python 测试.test.TestExample.test_2 的 Python 测试.executor": "Run",
     "Python 测试.test.TestExample.test_example 的 Python 测试.executor": "Run",
@@ -56,7 +57,7 @@
     "last_opened_file_path": "/Users/jay/Code/playwright-demo"
   }
 }]]></component>
-  <component name="RunManager" selected="Python 测试.test.TestExample.test_2 的 Python 测试">
+  <component name="RunManager" selected="Python 测试.test.AsyncTestExample.test_2 的 Python 测试">
     <configuration name="Python 测试 (test.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
@@ -70,6 +71,21 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test.AsyncTestExample.test_2 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="playwright-demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.AsyncTestExample.test_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="test.TestExample.test_1 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -119,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python 测试.test.AsyncTestExample.test_2 的 Python 测试" />
         <item itemvalue="Python 测试.test.TestExample.test_2 的 Python 测试" />
         <item itemvalue="Python 测试.test.TestExample.test_1 的 Python 测试" />
         <item itemvalue="Python 测试.test.TestExample.test_example 的 Python 测试" />
@@ -129,7 +146,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+        <option value="bundled-python-sdk-6a3326d57233-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.24807.21" />
       </set>
     </attachedChunks>
   </component>
@@ -214,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732696845210</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test: 测试脚本">
+      <option name="closed" value="true" />
+      <created>1732697904888</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732697904888</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
