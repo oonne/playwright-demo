@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 测试获取navigator.userAgent">
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 保存登录态">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_playwright.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +54,19 @@
     "Python 测试.test.TestExample.test_1 的 Python 测试.executor": "Run",
     "Python 测试.test.TestExample.test_2 的 Python 测试.executor": "Run",
     "Python 测试.test.TestExample.test_example 的 Python 测试.executor": "Run",
+    "Python 测试.test_playwright.TestPlaywright.test_4 的 Python 测试.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jay/Code/playwright-demo"
+    "last_opened_file_path": "/Users/jay/Code/playwright-demo/test"
   }
 }]]></component>
-  <component name="RunManager" selected="Python 测试.test.AsyncTestExample.test_3 的 Python 测试">
-    <configuration name="test.AsyncTestExample 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python 测试.test_playwright.TestPlaywright.test_5 的 Python 测试">
+    <configuration name="test_playwright.TestPlaywright.test_4 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,11 +77,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.AsyncTestExample&quot;" />
+      <option name="_new_target" value="&quot;test_playwright.TestPlaywright.test_4&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test.AsyncTestExample.test_2 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test_playwright.TestPlaywright.test_5 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,11 +92,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.AsyncTestExample.test_2&quot;" />
+      <option name="_new_target" value="&quot;test_playwright.TestPlaywright.test_5&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test.AsyncTestExample.test_3 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test.test_playwright.AsyncTestExample 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,11 +107,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.AsyncTestExample.test_3&quot;" />
+      <option name="_new_target" value="&quot;test.test_playwright.AsyncTestExample&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test.TestExample.test_1 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test.test_playwright.AsyncTestExample.test_2 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,11 +122,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.TestExample.test_1&quot;" />
+      <option name="_new_target" value="&quot;test.test_playwright.AsyncTestExample.test_2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test.TestExample.test_2 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test.test_playwright.AsyncTestExample.test_3 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,17 +137,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.TestExample.test_2&quot;" />
+      <option name="_new_target" value="&quot;test.test_playwright.AsyncTestExample.test_3&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python 测试.test.AsyncTestExample.test_3 的 Python 测试" />
-        <item itemvalue="Python 测试.test.AsyncTestExample.test_2 的 Python 测试" />
-        <item itemvalue="Python 测试.test.AsyncTestExample 的 Python 测试" />
-        <item itemvalue="Python 测试.test.TestExample.test_1 的 Python 测试" />
-        <item itemvalue="Python 测试.test.TestExample.test_2 的 Python 测试" />
+        <item itemvalue="Python 测试.test_playwright.TestPlaywright.test_5 的 Python 测试" />
+        <item itemvalue="Python 测试.test_playwright.TestPlaywright.test_4 的 Python 测试" />
+        <item itemvalue="Python 测试.test.test_playwright.AsyncTestExample.test_3 的 Python 测试" />
+        <item itemvalue="Python 测试.test.test_playwright.AsyncTestExample.test_2 的 Python 测试" />
+        <item itemvalue="Python 测试.test.test_playwright.AsyncTestExample 的 Python 测试" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732938973633</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="test: 保存登录态">
+      <option name="closed" value="true" />
+      <created>1732948928324</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732948928324</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,6 +281,7 @@
     <MESSAGE value="test: 测试脚本" />
     <MESSAGE value="test: 异步执行测试用例" />
     <MESSAGE value="test: 测试获取navigator.userAgent" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 测试获取navigator.userAgent" />
+    <MESSAGE value="test: 保存登录态" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 保存登录态" />
   </component>
 </project>

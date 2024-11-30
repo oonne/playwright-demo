@@ -69,7 +69,7 @@ class AsyncTestExample(unittest.IsolatedAsyncioTestCase):
         # 关闭浏览器
         await browser.close()
 
-    # 测试用例3：测试登录
+    # 测试用例3：测试保存登录态
     async def test_3(self):
         playwright = await async_playwright().start()
         # 创建浏览器上下文，每个上下文是独立的登录环境
@@ -97,6 +97,46 @@ class AsyncTestExample(unittest.IsolatedAsyncioTestCase):
         await context.close()
         # 关闭浏览器
         await browser.close()
+
+
+class TestPlaywright(unittest.IsolatedAsyncioTestCase):
+    async def asyncSetUp(self):
+        # 初始化代码
+        playwright = await async_playwright().start()
+        # 创建浏览器上下文，每个上下文是独立的登录环境
+        self.browser = await playwright.chromium.launch(headless=False, devtools=True)
+        # 尝试加载之前保存的状态
+        try:
+            self.context = await self.browser.new_context(storage_state="../data/test_4.json")
+        except FileNotFoundError:
+            self.context = await self.browser.new_context()
+        # 每个 context 就是一个会话窗口，可以创建自己的页面，也就是浏览器上的 tab 栏
+        self.page = await self.context.new_page()
+
+    async def asyncTearDown(self):
+        # 保存登录态
+        await self.context.storage_state(path="../data/test_4.json")
+        # 使用完成关闭上下文（也就是会话窗口）
+        await self.context.close()
+        # 关闭浏览器
+        await self.browser.close()
+
+    # 测试用例4：测试登录
+    async def test_4(self):
+        # 页面打开指定网址
+        await self.page.goto('https://link-ai.tech/home')
+        # 此处先手动登录，没有做自动化
+
+        # 延迟关闭
+        sleep(20)
+
+    async def test_5(self):
+        # 页面打开指定网址
+        await self.page.goto('https://link-ai.tech/app/default')
+        # 此处先手动登录，没有做自动化
+
+        # 延迟关闭
+        sleep(20)
 
 if __name__ == '__main__':
     unittest.main()
