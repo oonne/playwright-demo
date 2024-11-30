@@ -25,7 +25,7 @@ from .js.window_outerdimensions import window_outerdimensions
 from .js.utils import utils
 
 SCRIPTS: Dict[str, str] = {
-    "webdriver": "delete Object.getPrototypeOf(navigator).webdriver",
+    "utils": utils,
     "chrome_csi": chrome_csi,
     "chrome_app": chrome_app,
     "chrome_runtime": chrome_runtime,
@@ -42,7 +42,7 @@ SCRIPTS: Dict[str, str] = {
     "navigator_user_agent": navigator_userAgent,
     "navigator_hardware_concurrency": navigator_hardwareConcurrency,
     "outerdimensions": window_outerdimensions,
-    "utils": utils,
+    "webdriver": "delete Object.getPrototypeOf(navigator).webdriver",
     "webgl_vendor": webgl_vendor,
 }
 
@@ -68,22 +68,22 @@ class StealthConfig:
 
     # load script options
     webdriver: bool = True
-    webgl_vendor: bool = False
-    chrome_app: bool = False
-    chrome_csi: bool = False
-    chrome_load_times: bool = False
-    chrome_runtime: bool = False
-    iframe_content_window: bool = False
-    media_codecs: bool = False
+    webgl_vendor: bool = True
+    chrome_app: bool = True
+    chrome_csi: bool = True
+    chrome_load_times: bool = True
+    chrome_runtime: bool = True
+    iframe_content_window: bool = True
+    media_codecs: bool = True
     navigator_hardware_concurrency: int = 4
-    navigator_languages: bool = False
-    navigator_permissions: bool = False
-    navigator_platform: bool = False
-    navigator_plugins: bool = False
-    navigator_user_agent: bool = False
-    navigator_vendor: bool = False
-    outerdimensions: bool = False
-    hairline: bool = False
+    navigator_languages: bool = True
+    navigator_permissions: bool = True
+    navigator_platform: bool = True
+    navigator_plugins: bool = True
+    navigator_user_agent: bool = True
+    navigator_vendor: bool = True
+    outerdimensions: bool = True
+    hairline: bool = True
 
     # options
     vendor: str = "Intel Inc."
@@ -149,5 +149,7 @@ class StealthConfig:
 
 async def stealth_async(page: AsyncPage, config: StealthConfig = None):
     """stealth the page"""
+    init_scripts = ''
     for script in (config or StealthConfig()).enabled_scripts:
-        await page.add_init_script(script)
+        init_scripts += script + '\n'
+    await page.add_init_script(init_scripts)

@@ -5,7 +5,7 @@ from time import sleep
 from playwright.async_api import async_playwright
 from stealth.stealth import stealth_async
 
-class TestTiktok(unittest.IsolatedAsyncioTestCase):
+class TestFingerprint(unittest.IsolatedAsyncioTestCase):
     async def asyncSetUp(self):
         # 初始化代码
         playwright = await async_playwright().start()
@@ -29,6 +29,14 @@ class TestTiktok(unittest.IsolatedAsyncioTestCase):
         await self.context.close()
         # 关闭浏览器
         await self.browser.close()
+
+    # 识别网站
+    async def test_web(self):
+        # 页面打开指定网址
+        await self.page.goto('https://www.baidu.com')
+
+        # 延迟关闭
+        sleep(10)
 
     # 识别指纹
     async def test_scan(self):
