@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 修改指纹">
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 指纹篡改失败">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stealth/stealth.py" beforeDir="false" afterPath="$PROJECT_DIR$/stealth/stealth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_fingerprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_fingerprint.py" afterDir="false" />
@@ -78,7 +78,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python 测试.test_fingerprint.TestFingerprint.test_web 的 Python 测试">
+  <component name="RunManager" selected="Python 测试.test_fingerprint.TestFingerprint.test_scan 的 Python 测试">
     <configuration name="test_fingerprint.TestFingerprint.test_bot 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
@@ -156,9 +156,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_web 的 Python 测试" />
-        <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_bot 的 Python 测试" />
         <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_scan 的 Python 测试" />
+        <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_bot 的 Python 测试" />
+        <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_web 的 Python 测试" />
         <item itemvalue="Python 测试.test_fingerprint.TestTiktok.test_web 的 Python 测试" />
         <item itemvalue="Python 测试.test_fingerprint.TestTiktok.test_scan 的 Python 测试" />
       </list>
@@ -300,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732957625424</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="test: 指纹篡改失败">
+      <option name="closed" value="true" />
+      <created>1732962969473</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732962969473</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,6 +331,7 @@
     <MESSAGE value="test: 测试获取navigator.userAgent" />
     <MESSAGE value="test: 保存登录态" />
     <MESSAGE value="test: 修改指纹" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 修改指纹" />
+    <MESSAGE value="test: 指纹篡改失败" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 指纹篡改失败" />
   </component>
 </project>

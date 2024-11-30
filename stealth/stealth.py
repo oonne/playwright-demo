@@ -113,6 +113,8 @@ class StealthConfig:
         yield SCRIPTS["utils"]
         yield SCRIPTS["generate_magic_arrays"]
 
+        if self.webdriver:
+            yield SCRIPTS["webdriver"]
         if self.chrome_app:
             yield SCRIPTS["chrome_app"]
         if self.chrome_csi:
@@ -139,8 +141,6 @@ class StealthConfig:
             yield SCRIPTS["navigator_user_agent"]
         if self.navigator_vendor:
             yield SCRIPTS["navigator_vendor"]
-        if self.webdriver:
-            yield SCRIPTS["webdriver"]
         if self.outerdimensions:
             yield SCRIPTS["outerdimensions"]
         if self.webgl_vendor:
@@ -149,6 +149,7 @@ class StealthConfig:
 
 async def stealth_async(page: AsyncPage, config: StealthConfig = None):
     """stealth the page"""
+    await page.add_init_script("delete Object.getPrototypeOf(navigator).webdriver")
     init_scripts = ''
     for script in (config or StealthConfig()).enabled_scripts:
         init_scripts += script + '\n'

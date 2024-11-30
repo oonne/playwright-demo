@@ -15,7 +15,10 @@ class TestFingerprint(unittest.IsolatedAsyncioTestCase):
         try:
             self.context = await self.browser.new_context(storage_state="../data/fingerprint.json")
         except FileNotFoundError:
-            self.context = await self.browser.new_context()
+            self.context = await self.browser.new_context(
+                timezone_id='America/Los_Angeles',
+                locale='en-US'
+            )
         # 每个 context 就是一个会话窗口，可以创建自己的页面，也就是浏览器上的 tab 栏
         self.page = await self.context.new_page()
 
@@ -30,7 +33,7 @@ class TestFingerprint(unittest.IsolatedAsyncioTestCase):
         # 关闭浏览器
         await self.browser.close()
 
-    # 识别网站
+    # 访问普通网站
     async def test_web(self):
         # 页面打开指定网址
         await self.page.goto('https://www.baidu.com')
