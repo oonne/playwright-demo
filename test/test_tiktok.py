@@ -13,7 +13,12 @@ class TestTiktok(unittest.IsolatedAsyncioTestCase):
         self.browser = await playwright.chromium.launch(headless=False, devtools=True)
         # 尝试加载之前保存的状态
         try:
-            self.context = await self.browser.new_context(storage_state="../data/tiktok_us.json")
+            self.context = await self.browser.new_context(
+                storage_state="../data/tiktok_us.json",
+                timezone_id='America/Los_Angeles',
+                locale='en-US',
+                viewport={'width': 1920, 'height': 720},
+            )
         except FileNotFoundError:
             self.context = await self.browser.new_context(
                 timezone_id='America/Los_Angeles',
@@ -39,10 +44,10 @@ class TestTiktok(unittest.IsolatedAsyncioTestCase):
         # 页面打开指定网址
         await self.page.goto('https://www.tiktok.com')
         # 点击 id 为 header-login-button 的按钮
-        await self.page.click("id='header-login-button'")
+        # await self.page.click("id='header-login-button'")
 
         # 延迟关闭
-        sleep(10)
+        sleep(30)
 
 
 if __name__ == '__main__':

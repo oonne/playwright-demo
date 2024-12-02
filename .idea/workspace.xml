@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 修改指纹">
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 修改窗口大小">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_fingerprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_fingerprint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_tiktok.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tiktok.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -326,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733106145516</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="test: 修改窗口大小">
+      <option name="closed" value="true" />
+      <created>1733108604690</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1733108604690</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -350,6 +359,7 @@
     <MESSAGE value="test: 保存登录态" />
     <MESSAGE value="test: 指纹篡改失败" />
     <MESSAGE value="test: 修改指纹" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 修改指纹" />
+    <MESSAGE value="test: 修改窗口大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 修改窗口大小" />
   </component>
 </project>

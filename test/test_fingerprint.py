@@ -13,11 +13,17 @@ class TestFingerprint(unittest.IsolatedAsyncioTestCase):
         self.browser = await playwright.chromium.launch(headless=False, devtools=True)
         # 尝试加载之前保存的状态
         try:
-            self.context = await self.browser.new_context(storage_state="../data/fingerprint.json")
+            self.context = await self.browser.new_context(
+                storage_state="../data/fingerprint.json",
+                timezone_id='America/Los_Angeles',
+                locale='en-US',
+                viewport={'width': 1920, 'height': 720},
+            )
         except FileNotFoundError:
             self.context = await self.browser.new_context(
                 timezone_id='America/Los_Angeles',
-                locale='en-US'
+                locale='en-US',
+                viewport={'width': 1920, 'height': 720},
             )
         # 每个 context 就是一个会话窗口，可以创建自己的页面，也就是浏览器上的 tab 栏
         self.page = await self.context.new_page()
