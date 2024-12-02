@@ -1,6 +1,5 @@
 # 测试修改一下指纹
 import unittest
-import asyncio
 from time import sleep
 from playwright.async_api import async_playwright
 from stealth.stealth import stealth_async
@@ -39,13 +38,28 @@ class TestTiktok(unittest.IsolatedAsyncioTestCase):
         # 关闭浏览器
         await self.browser.close()
 
+    # 监听QRCODE返回
+    async def check_qrcode(self, response):
+        await response.finished()
+        if "tiktok.com/passport/web/get_qrcode" in response.url:
+            res = await response.json()
+            print(res['data']['qrcode'])
+
     # 登录tiktok
-    async def test_5(self):
+    async def test_click_login(self):
         # 页面打开指定网址
-        await self.page.goto('https://tiktok.com/login/qrcode')
+        await self.page.goto('https://www.tiktok.com')
+
+        # 监听二维码返回
+        self.page.on('response', self.check_qrcode)
+
+        # 点击 内容为 Log in 的按钮
+        await self.page.click('text="Log in"')
+        # 点击 内容为 Use QR code 的按钮
+        await self.page.click('text="Use QR code"')
 
         # 延迟关闭
-        sleep(30)
+        sleep(5)
 
 
 if __name__ == '__main__':
