@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 指纹篡改失败">
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 修改指纹">
+      <change afterPath="$PROJECT_DIR$/test/test_tiktok.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stealth/stealth.py" beforeDir="false" afterPath="$PROJECT_DIR$/stealth/stealth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_fingerprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_fingerprint.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,55 +45,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python 测试.Python 测试 (test.py 内).executor": "Run",
-    "Python 测试.test.AsyncTestExample 的 Python 测试.executor": "Run",
-    "Python 测试.test.AsyncTestExample.test_2 的 Python 测试.executor": "Run",
-    "Python 测试.test.AsyncTestExample.test_3 的 Python 测试.executor": "Run",
-    "Python 测试.test.TestExample.test_1 的 Python 测试.executor": "Run",
-    "Python 测试.test.TestExample.test_2 的 Python 测试.executor": "Run",
-    "Python 测试.test.TestExample.test_example 的 Python 测试.executor": "Run",
-    "Python 测试.test.test_fingerprint.TestTiktok.test_scan 的 Python 测试.executor": "Run",
-    "Python 测试.test_fingerprint.TestFingerprint.test_bot 的 Python 测试.executor": "Run",
-    "Python 测试.test_fingerprint.TestFingerprint.test_scan 的 Python 测试.executor": "Run",
-    "Python 测试.test_fingerprint.TestFingerprint.test_web 的 Python 测试.executor": "Run",
-    "Python 测试.test_fingerprint.TestTiktok.test_baidu 的 Python 测试.executor": "Run",
-    "Python 测试.test_fingerprint.TestTiktok.test_bot 的 Python 测试.executor": "Run",
-    "Python 测试.test_fingerprint.TestTiktok.test_google 的 Python 测试.executor": "Run",
-    "Python 测试.test_fingerprint.TestTiktok.test_scan 的 Python 测试.executor": "Run",
-    "Python 测试.test_fingerprint.TestTiktok.test_web 的 Python 测试.executor": "Run",
-    "Python 测试.test_playwright.TestPlaywright.test_4 的 Python 测试.executor": "Run",
-    "Python 测试.test_playwright.TestPlaywright.test_5 的 Python 测试.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jay/Code/playwright-demo"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python 测试.Python 测试 (test.py 内).executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test.AsyncTestExample 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test.AsyncTestExample.test_2 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test.AsyncTestExample.test_3 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test.TestExample.test_1 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test.TestExample.test_2 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test.TestExample.test_example 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test.test_fingerprint.TestTiktok.test_scan 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_fingerprint.TestFingerprint.test_bot 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_fingerprint.TestFingerprint.test_scan 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_fingerprint.TestFingerprint.test_web 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_fingerprint.TestTiktok.test_baidu 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_fingerprint.TestTiktok.test_bot 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_fingerprint.TestTiktok.test_google 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_fingerprint.TestTiktok.test_scan 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_fingerprint.TestTiktok.test_web 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_playwright.AsyncTestExample.test_2 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_playwright.TestPlaywright.test_4 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_playwright.TestPlaywright.test_5 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_tiktok.Test.test_web 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.test_tiktok.TestTiktok.test_5 的 Python 测试.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jay/Code/playwright-demo/test&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fingerprint" />
-      <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python 测试.test_fingerprint.TestFingerprint.test_scan 的 Python 测试">
-    <configuration name="test_fingerprint.TestFingerprint.test_bot 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="playwright-demo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_fingerprint.TestFingerprint.test_bot&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python 测试.test_tiktok.TestTiktok.test_5 的 Python 测试">
     <configuration name="test_fingerprint.TestFingerprint.test_scan 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
@@ -124,7 +112,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test_fingerprint.TestTiktok.test_scan 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test_playwright.AsyncTestExample.test_2 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,11 +123,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_fingerprint.TestTiktok.test_scan&quot;" />
+      <option name="_new_target" value="&quot;test_playwright.AsyncTestExample.test_2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test_fingerprint.TestTiktok.test_web 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test_tiktok.TestTiktok.test_5 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,17 +138,32 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_fingerprint.TestTiktok.test_web&quot;" />
+      <option name="_new_target" value="&quot;test_tiktok.TestTiktok.test_5&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_tiktok.Test.test_web 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="playwright-demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_tiktok.Test.test_web&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python 测试.test_tiktok.TestTiktok.test_5 的 Python 测试" />
         <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_scan 的 Python 测试" />
-        <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_bot 的 Python 测试" />
         <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_web 的 Python 测试" />
-        <item itemvalue="Python 测试.test_fingerprint.TestTiktok.test_web 的 Python 测试" />
-        <item itemvalue="Python 测试.test_fingerprint.TestTiktok.test_scan 的 Python 测试" />
+        <item itemvalue="Python 测试.test_playwright.AsyncTestExample.test_2 的 Python 测试" />
+        <item itemvalue="Python 测试.test_tiktok.Test.test_web 的 Python 测试" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732962969473</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="test: 修改指纹">
+      <option name="closed" value="true" />
+      <created>1732968379829</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732968379829</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,8 +341,8 @@
     <MESSAGE value="test: 异步执行测试用例" />
     <MESSAGE value="test: 测试获取navigator.userAgent" />
     <MESSAGE value="test: 保存登录态" />
-    <MESSAGE value="test: 修改指纹" />
     <MESSAGE value="test: 指纹篡改失败" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 指纹篡改失败" />
+    <MESSAGE value="test: 修改指纹" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 修改指纹" />
   </component>
 </project>
