@@ -17,7 +17,8 @@ class TestTiktok(unittest.IsolatedAsyncioTestCase):
         except FileNotFoundError:
             self.context = await self.browser.new_context(
                 timezone_id='America/Los_Angeles',
-                locale='en-US'
+                locale='en-US',
+                viewport={'width': 1920, 'height': 720},
             )
         # 每个 context 就是一个会话窗口，可以创建自己的页面，也就是浏览器上的 tab 栏
         self.page = await self.context.new_page()
@@ -37,6 +38,8 @@ class TestTiktok(unittest.IsolatedAsyncioTestCase):
     async def test_5(self):
         # 页面打开指定网址
         await self.page.goto('https://www.tiktok.com')
+        # 点击 id 为 header-login-button 的按钮
+        await self.page.click("id='header-login-button'")
 
         # 延迟关闭
         sleep(10)
