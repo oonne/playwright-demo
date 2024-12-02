@@ -39,12 +39,10 @@ class TestTiktok(unittest.IsolatedAsyncioTestCase):
         # 关闭浏览器
         await self.browser.close()
 
-    # 访问tiktok
+    # 登录tiktok
     async def test_5(self):
         # 页面打开指定网址
-        await self.page.goto('https://www.tiktok.com')
-        # 点击 id 为 header-login-button 的按钮
-        # await self.page.click("id='header-login-button'")
+        await self.page.goto('https://tiktok.com/login/qrcode')
 
         # 延迟关闭
         sleep(30)
