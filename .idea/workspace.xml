@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 修改再次打开页面的指纹">
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 获取二维码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_tiktok.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tiktok.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733113838445</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="test: 获取二维码">
+      <option name="closed" value="true" />
+      <created>1733125711601</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1733125711601</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,6 +385,7 @@
     <MESSAGE value="test: 修改指纹" />
     <MESSAGE value="test: 修改窗口大小" />
     <MESSAGE value="test: 修改再次打开页面的指纹" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 修改再次打开页面的指纹" />
+    <MESSAGE value="test: 获取二维码" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 获取二维码" />
   </component>
 </project>

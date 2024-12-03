@@ -2,7 +2,7 @@
 import unittest
 from time import sleep
 from playwright.async_api import async_playwright
-from stealth.stealth import stealth_async
+from test.stealth import stealth_async
 
 class TestTiktok(unittest.IsolatedAsyncioTestCase):
     async def asyncSetUp(self):
