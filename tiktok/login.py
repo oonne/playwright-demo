@@ -11,7 +11,7 @@ async def login():
 
     await browser['page'].goto('https://www.browserscan.net/zh/')
 
-    time.sleep(10)
+    input("Press Enter to exit...")
 
 if __name__ == '__main__':
     asyncio.run(login())

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 创建页面">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktok/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiktok/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/browser.py" afterDir="false" />
-    </list>
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 防止重复创建页面" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -400,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733825900822</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="test: 防止重复创建页面">
+      <option name="closed" value="true" />
+      <created>1733827061884</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1733827061884</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,6 +434,7 @@
     <MESSAGE value="test: 修改目录层级" />
     <MESSAGE value="test: 重新新建文件测试" />
     <MESSAGE value="test: 创建页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 创建页面" />
+    <MESSAGE value="test: 防止重复创建页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 防止重复创建页面" />
   </component>
 </project>
