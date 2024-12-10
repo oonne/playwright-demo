@@ -17,7 +17,11 @@ async def create_browser(contextName=None, timezone_id='Asia/Shanghai', locale='
         locale=locale,
         viewport={'width': 1440, 'height': 900},
     )
-    page = await context.new_page()
+    pages = context.pages
+    if len(pages)==0:
+        page = await context.new_page()
+    else:
+        page = pages[0]
 
     return {
         'playwright': playwright,

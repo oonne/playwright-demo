@@ -8,8 +8,10 @@ async def login():
     获取Tiktok登录二维码
     """
     browser = await create_browser('tiktok')
-    print(browser)
 
+    await browser['page'].goto('https://www.browserscan.net/zh/')
+
+    time.sleep(10)
 
 if __name__ == '__main__':
     asyncio.run(login())
