@@ -30,7 +30,7 @@ class TestFingerprint(unittest.IsolatedAsyncioTestCase):
     # 访问普通网站
     async def test_web(self):
         # 页面打开指定网址
-        await self.page.goto('https://www.baidu.com')
+        await self.page.goto('https://www.tiktok.com')
 
         # 延迟关闭
         sleep(10)

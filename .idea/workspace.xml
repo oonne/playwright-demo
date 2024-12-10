@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 获取二维码">
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 修改目录层级">
+      <change afterPath="$PROJECT_DIR$/tiktok/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiktok/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_fingerprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_fingerprint.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,33 +73,48 @@
     "Python 测试.test_tiktok.Test.test_web 的 Python 测试.executor": "Run",
     "Python 测试.test_tiktok.TestTiktok.test_5 的 Python 测试.executor": "Run",
     "Python 测试.test_tiktok.TestTiktok.test_click_login 的 Python 测试.executor": "Run",
+    "Python.login.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jay/Code/playwright-demo/test",
-    "run.code.analysis.last.selected.profile": "aDefault"
+    "last_opened_file_path": "/Users/jay/Code/playwright-demo/utils",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/tiktok" />
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fingerprint" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python 测试.test_tiktok.TestTiktok.test_click_login 的 Python 测试">
-    <configuration name="test_fingerprint.TestFingerprint.test_bot 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.login">
+    <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="playwright-demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tiktok" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_fingerprint.TestFingerprint.test_bot&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tiktok/login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="test_fingerprint.TestFingerprint.test_scan 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -159,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.login" />
         <item itemvalue="Python 测试.test_tiktok.TestTiktok.test_click_login 的 Python 测试" />
+        <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_web 的 Python 测试" />
         <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_scan 的 Python 测试" />
         <item itemvalue="Python 测试.test_tiktok.TestTiktok.test_5 的 Python 测试" />
-        <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_bot 的 Python 测试" />
-        <item itemvalue="Python 测试.test_fingerprint.TestFingerprint.test_web 的 Python 测试" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733125711601</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="test: 修改目录层级">
+      <option name="closed" value="true" />
+      <created>1733218480572</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1733218480572</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -386,6 +414,7 @@
     <MESSAGE value="test: 修改窗口大小" />
     <MESSAGE value="test: 修改再次打开页面的指纹" />
     <MESSAGE value="test: 获取二维码" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: 获取二维码" />
+    <MESSAGE value="test: 修改目录层级" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 修改目录层级" />
   </component>
 </project>
