@@ -9,9 +9,13 @@ async def login():
     """
     browser = await create_browser('tiktok')
 
-    await browser['page'].goto('https://www.browserscan.net/zh/')
+    await browser['page'].goto('https://www.browserscan.net/zh/bot-detection#google_vignette')
 
+    # 关闭
     input("Press Enter to exit...")
+    await browser['context'].close()
+    await browser['playwright'].stop()
+    print('已关闭')
 
 if __name__ == '__main__':
     asyncio.run(login())
