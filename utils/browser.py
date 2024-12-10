@@ -8,8 +8,7 @@ async def stealth_webdriver(page: Page):
     """
     await page.add_init_script("delete Object.getPrototypeOf(navigator).webdriver")
 
-
-async def create_browser(contextName=None, timezone_id='Asia/Shanghai', locale='zh-CN'):
+async def create_browser(contextName=None, timezone_id='Asia/Singapore', locale='zh-CN'):
     """
     创建一个浏览器实例，并做指纹处理
     """
@@ -22,6 +21,7 @@ async def create_browser(contextName=None, timezone_id='Asia/Shanghai', locale='
         devtools=False,
         timezone_id=timezone_id,
         locale=locale,
+        user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
         viewport={'width': 1440, 'height': 900},
     )
     pages = context.pages
