@@ -1,6 +1,13 @@
-from playwright.async_api import async_playwright
+from playwright.async_api import async_playwright, Page
 import random
 import string
+
+async def stealth_webdriver(page: Page):
+    """
+    机器人控制 navigator.webdriver
+    """
+    await page.add_init_script("delete Object.getPrototypeOf(navigator).webdriver")
+
 
 async def create_browser(contextName=None, timezone_id='Asia/Shanghai', locale='zh-CN'):
     """
@@ -12,7 +19,7 @@ async def create_browser(contextName=None, timezone_id='Asia/Shanghai', locale='
     playwright = await async_playwright().start()
     context = await playwright.chromium.launch_persistent_context("../data/"+contextName,
         headless=False,
-        devtools=True,
+        devtools=False,
         timezone_id=timezone_id,
         locale=locale,
         viewport={'width': 1440, 'height': 900},
@@ -23,6 +30,10 @@ async def create_browser(contextName=None, timezone_id='Asia/Shanghai', locale='
     else:
         page = pages[0]
 
+    # 指纹
+    await stealth_webdriver(page)
+
+    # 返回
     return {
         'playwright': playwright,
         'context': context,

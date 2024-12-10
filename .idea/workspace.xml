@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: enter to exit">
+    <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 友好退出">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktok/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiktok/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/browser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -415,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733827158713</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="test: 友好退出">
+      <option name="closed" value="true" />
+      <created>1733827272864</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1733827272864</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -447,6 +455,7 @@
     <MESSAGE value="test: 创建页面" />
     <MESSAGE value="test: 防止重复创建页面" />
     <MESSAGE value="test: enter to exit" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: enter to exit" />
+    <MESSAGE value="test: 友好退出" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 友好退出" />
   </component>
 </project>
