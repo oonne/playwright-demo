@@ -31,7 +31,12 @@ async def create_browser(contextName=None, timezone_id=None, locale=None, user_a
         timezone_id=timezone_id,
         locale=locale,
         user_agent=user_agent,
-        viewport={'width': 1440, 'height': 900}
+        viewport={'width': 1440, 'height': 900},
+        args=[
+            "--disable-webrtc",
+            "--use-fake-ui-for-media-stream",
+            "--use-fake-device-for-media-stream"
+        ]
     )
     pages = context.pages
     if len(pages)==0:
@@ -41,7 +46,7 @@ async def create_browser(contextName=None, timezone_id=None, locale=None, user_a
 
     # 指纹
     await stealth_webdriver(page)
-    await stealth_js(page)
+    # await stealth_js(page)
 
     time.sleep(1)
 
