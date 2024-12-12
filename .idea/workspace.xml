@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b8ba0a2-e660-44b0-80a4-e54919c539a6" name="更改" comment="test: 浏览器检测">
+      <change afterPath="$PROJECT_DIR$/utils/stealth.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiktok/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiktok/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/browser.py" afterDir="false" />
@@ -432,7 +433,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733827798848</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="test: 浏览器检测">
+      <option name="closed" value="true" />
+      <created>1733835134195</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1733835134195</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

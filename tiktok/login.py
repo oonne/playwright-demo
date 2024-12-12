@@ -7,7 +7,10 @@ async def login():
     """
     获取Tiktok登录二维码
     """
-    browser = await create_browser('tiktok')
+    browser = await create_browser(contextName='tiktok',
+                                   timezone_id='Asia/Singapore',
+                                   locale='zh-SG',
+                                   user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36')
 
     # await browser['page'].goto('https://www.browserscan.net/zh/bot-detection#google_vignette')
     await browser['page'].goto('https://www.browserscan.net/zh')
